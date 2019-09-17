@@ -24,7 +24,8 @@ class PostDetailsSerializers(serializers.ModelSerializer):
             'created_on',
             'published_on',
             'last_edited',
-            'total_comments'
+            'total_comments',
+            'images'
         ]
 
 
@@ -45,5 +46,7 @@ class PostsSerializers(serializers.ModelSerializer):
             'created_on',
             'published_on',
             'last_edited',
-            'total_comments'
+            'total_comments',
+            'images'
+
         ]

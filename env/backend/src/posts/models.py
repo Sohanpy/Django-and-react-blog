@@ -19,6 +19,7 @@ class Post(models.Model):
     created_on = models.DateTimeField(auto_now_add=True)
     published_on = models.DateTimeField(null=True, blank=True)
     last_edited = models.DateTimeField(auto_now=True)
+    images = models.ImageField(blank=True, null=True, upload_to="posts/images")
 
     def __str__(self):
         return self.title
